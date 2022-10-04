@@ -114,7 +114,11 @@ strong {
   text-align: center;
   font-size: 3rem;
   text-decoration: underline;
+  margin-bottom: 0;
+margin-top: 4rem;
+margin-bottom: 1.5rem;
 }
+
 .s-icon {
   width: 5rem;
 }
