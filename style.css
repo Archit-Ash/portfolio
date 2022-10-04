@@ -1,0 +1,210 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: white;
+  font-family: "Inter", sans-serif;
+  /* background-image: url("images/dark-bg.jpg");
+  background-size: 100%; */
+  background-repeat: repeat;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #3a3a3a,
+    #393939,
+    #353635,
+    #303130,
+    #2a2b2a,
+    #232423,
+    #1d1e1d,
+    #161816,
+    #0f120f,
+    #080b08,
+    #020602,
+    #000400
+  );
+}
+
+.darkmode {
+  background-color: white;
+  color: black;
+
+  background: radial-gradient(
+    circle at 50% 50%,
+    #fed8c7,
+    #ffd7cb,
+    #ffd6ce,
+    #ffd6d2,
+    #fed6d6,
+    #fdd6da,
+    #fbd6de,
+    #f8d6e1
+  );
+  background-size: 100%;
+  font-weight: bolder;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.heading {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#mode,
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: #ff000d91;
+  font-weight: bolder;
+}
+a:hover {
+  text-decoration: underline;
+}
+.name {
+  color: #ff0000;
+}
+
+.links {
+  padding-right: 2.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+.links:hover {
+  font-size: 1.75rem;
+  color: #ff000d;
+}
+
+.flex-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+strong {
+  font-size: 2rem;
+}
+.mepic {
+  width: 25rem;
+  border-radius: 100%;
+}
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.mypic {
+  border-radius: 100%;
+  width: 30rem;
+}
+.intro {
+  font-size: 2rem;
+}
+.intro-desc {
+  font-size: 1.15rem;
+}
+#skills,
+#projects,
+#contact {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+.s-icon {
+  width: 5rem;
+}
+.skill {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.s-in {
+  font-size: 0;
+  text-align: center;
+}
+.skill-2 {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+.s-in:hover {
+  animation-name: hower;
+  animation-duration: 1s;
+  animation-delay: 15ms;
+  animation-fill-mode: forwards;
+}
+@keyframes hower {
+  from {
+    background-color: transparent;
+    font-size: 0rem;
+  }
+  to {
+    background-color: #fd5c6421;
+
+    font-size: 1rem;
+  }
+}
+.s-in:not(:hover) {
+  animation-name: nohower;
+  animation-duration: 1s;
+  animation-delay: 15ms;
+  animation-fill-mode: forwards;
+}
+@keyframes nohower {
+  from {
+    background-color: #fd5c6421;
+
+    font-size: 1rem;
+  }
+  to {
+    background-color: transparent;
+    font-size: 0rem;
+  }
+}
+.proj-l {
+  display: flex;
+  grid-template-columns: 25% 55%;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.proj-icon {
+  width: 40rem;
+}
+.proj-in {
+  height: 100%;
+  font-size: 1.5rem;
+
+  border-collapse: collapse;
+}
+.contacts {
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+}
+.contactme {
+  text-align: center;
+}
+.message {
+  width: 4rem;
+}
+p > .name {
+  font-size: 2rem;
+}
+hr {
+  padding: 0;
+  margin: 0;
+}
