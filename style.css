@@ -1,4 +1,4 @@
-html {
+html {font-weight: 900;
   scroll-behavior: smooth;
 }
 body {
@@ -9,15 +9,7 @@ body {
   background-repeat: repeat;
   background: radial-gradient(
     circle at 50% 50%,
-    #3a3a3a,
-    #393939,
-    #353635,
-    #303130,
-    #2a2b2a,
-    #232423,
-    #1d1e1d,
-    #161816,
-    #0f120f,
+    
     #080b08,
     #020602,
     #000400
@@ -40,7 +32,7 @@ body {
     #f8d6e1
   );
   background-size: 100%;
-  font-weight: bolder;
+  
 }
 ul {
   list-style: none;
@@ -50,11 +42,14 @@ ul {
 .heading {
   font-family: "Times New Roman", Times, serif;
 }
-
+div#left
+{
+  padding-right: 40px;
+}
 #mode,
-.logo {
-  width: 2.5rem;
-  height: 2.5rem;
+img.logo {
+  width: 40px;
+  
 }
 a {
   text-decoration: none;
@@ -83,6 +78,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
 }
 strong {
   font-size: 2rem;
@@ -90,18 +86,16 @@ strong {
 .mepic {
   width: 25rem;
   border-radius: 100%;
+  padding: 5rem;
 }
 .me {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.mypic {
-  border-radius: 100%;
-  width: 30rem;
-}
+
 .intro {
   font-size: 2rem;
 }
@@ -112,40 +106,34 @@ strong {
 #projects,
 #contact {
   text-align: center;
+
   font-size: 3rem;
   text-decoration: underline;
   margin-bottom: 0;
-margin-top: 6rem;
-margin-bottom: 2rem;
+margin-top: 4rem;
+margin-bottom: 1.5rem;
 }
-
 .s-icon {
   width: 5rem;
 }
-.skill {
-  display: grid;
-  grid-template-columns: 20% 20% 20%;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
+.skill,
+  .skill-2 {
+    display: flex !important;
+
+    align-items: center;
+    justify-content: space-evenly !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
 .s-in {
   font-size: 0;
   text-align: center;
 }
-.skill-2 {
-  display: grid;
-  grid-template-columns: 20% 20%;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5%;
-  padding-bottom: 1%;
-}
 .s-in:hover {
   animation-name: hower;
   animation-duration: 1s;
-  animation-delay: 15ms;
+  animation-delay: 50ms;
   animation-fill-mode: forwards;
 }
 @keyframes hower {
@@ -176,23 +164,32 @@ margin-bottom: 2rem;
     font-size: 0rem;
   }
 }
+
 .proj-l {
-  display: flex;
-  grid-template-columns: 25% 55%;
-  align-items: center;
-  justify-content: space-around;
+  display: block;
+
+text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
+  width:80%;
+  margin: auto;
+  
+  
 }
 
 .proj-icon {
-  width: 40rem;
+
+width: 60%;
+
+  
 }
 .proj-in {
-  height: 100%;
+  text-align: center;
   font-size: 1.5rem;
-
-  border-collapse: collapse;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  
+  
 }
 .contacts {
   height: 30px;
@@ -206,9 +203,19 @@ margin-bottom: 2rem;
   width: 4rem;
 }
 p > .name {
-  font-size: 2rem;
+  font-size: 3rem;
+  
 }
 hr {
   padding: 0;
   margin: 0;
+}
+.faded {
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+
+@keyframes faded {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
